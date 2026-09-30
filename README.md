@@ -117,3 +117,7 @@ indices printed three unchanged matrices. Tracked files, commit history, and
 clean Git status were checked before and after testing. `make clean` removed
 the executable. A cleanup trap removed the unique remote temporary directory,
 and a separate read-only SSH check verified its absence.
+
+An unauthenticated fresh HTTPS clone of the public GitHub repository also
+passed all 12 tests on Cycle 1 without warnings. The sample output matched,
+Git stayed clean, and remote cleanup was verified separately.
