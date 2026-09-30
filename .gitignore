@@ -1,0 +1,11 @@
+/main
+*.o
+*.dSYM/
+__pycache__/
+.DS_Store
+
+# Instructor handouts stay local.
+/Canvas Prompt.txt
+/AI_USAGE_LOG_INSTRUCTIONS-1.md
+/Lab5_Companion_Guide (1).pdf
+/sample_output.txt
