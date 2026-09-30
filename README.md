@@ -107,3 +107,13 @@ The conversation and significant coding actions are recorded in
 [ai_usage_log.md](ai_usage_log.md), following the Lab 04 format. Only actual
 student messages are numbered as interactions; automatic app and environment
 context is excluded.
+
+## KU Cycle validation
+
+Tested on `cycle1.eecs.ku.edu` on September 30, 2026 with g++ 11.4.0.
+`make clean all test` passed all 12 test methods without compiler warnings.
+The generated sample output matched `output.txt` byte for byte; invalid edit
+indices printed three unchanged matrices. Tracked files, commit history, and
+clean Git status were checked before and after testing. `make clean` removed
+the executable. A cleanup trap removed the unique remote temporary directory,
+and a separate read-only SSH check verified its absence.
